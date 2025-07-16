@@ -1,0 +1,160 @@
+pip install -U google-genai
+Collecting google-genai
+  Downloading google_genai-1.26.0-py3-none-any.whl.metadata (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.4/42.4 kB 859.1 kB/s eta 0:00:00
+Collecting anyio<5.0.0,>=4.8.0 (from google-genai)
+  Downloading anyio-4.9.0-py3-none-any.whl.metadata (4.7 kB)
+Requirement already satisfied: google-auth<3.0.0,>=2.14.1 in /opt/anaconda3/lib/python3.11/site-packages (from google-genai) (2.40.3)
+Collecting httpx<1.0.0,>=0.28.1 (from google-genai)
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: pydantic<3.0.0,>=2.0.0 in /opt/anaconda3/lib/python3.11/site-packages (from google-genai) (2.9.2)
+Requirement already satisfied: requests<3.0.0,>=2.28.1 in /opt/anaconda3/lib/python3.11/site-packages (from google-genai) (2.32.2)
+Collecting tenacity<9.0.0,>=8.2.3 (from google-genai)
+  Downloading tenacity-8.5.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting websockets<15.1.0,>=13.0.0 (from google-genai)
+  Downloading websockets-15.0.1-cp311-cp311-macosx_10_9_x86_64.whl.metadata (6.8 kB)
+Requirement already satisfied: typing-extensions<5.0.0,>=4.11.0 in /opt/anaconda3/lib/python3.11/site-packages (from google-genai) (4.14.1)
+Requirement already satisfied: idna>=2.8 in /opt/anaconda3/lib/python3.11/site-packages (from anyio<5.0.0,>=4.8.0->google-genai) (3.7)
+Requirement already satisfied: sniffio>=1.1 in /opt/anaconda3/lib/python3.11/site-packages (from anyio<5.0.0,>=4.8.0->google-genai) (1.3.0)
+Requirement already satisfied: cachetools<6.0,>=2.0.0 in /opt/anaconda3/lib/python3.11/site-packages (from google-auth<3.0.0,>=2.14.1->google-genai) (4.2.2)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /opt/anaconda3/lib/python3.11/site-packages (from google-auth<3.0.0,>=2.14.1->google-genai) (0.2.8)
+Requirement already satisfied: rsa<5,>=3.1.4 in /opt/anaconda3/lib/python3.11/site-packages (from google-auth<3.0.0,>=2.14.1->google-genai) (4.9.1)
+Requirement already satisfied: certifi in /opt/anaconda3/lib/python3.11/site-packages (from httpx<1.0.0,>=0.28.1->google-genai) (2024.7.4)
+Requirement already satisfied: httpcore==1.* in /opt/anaconda3/lib/python3.11/site-packages (from httpx<1.0.0,>=0.28.1->google-genai) (1.0.6)
+Requirement already satisfied: h11<0.15,>=0.13 in /opt/anaconda3/lib/python3.11/site-packages (from httpcore==1.*->httpx<1.0.0,>=0.28.1->google-genai) (0.14.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /opt/anaconda3/lib/python3.11/site-packages (from pydantic<3.0.0,>=2.0.0->google-genai) (0.7.0)
+Requirement already satisfied: pydantic-core==2.23.4 in /opt/anaconda3/lib/python3.11/site-packages (from pydantic<3.0.0,>=2.0.0->google-genai) (2.23.4)
+Requirement already satisfied: charset-normalizer<4,>=2 in /opt/anaconda3/lib/python3.11/site-packages (from requests<3.0.0,>=2.28.1->google-genai) (2.0.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/anaconda3/lib/python3.11/site-packages (from requests<3.0.0,>=2.28.1->google-genai) (2.0.7)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /opt/anaconda3/lib/python3.11/site-packages (from pyasn1-modules>=0.2.1->google-auth<3.0.0,>=2.14.1->google-genai) (0.4.8)
+Downloading google_genai-1.26.0-py3-none-any.whl (217 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 217.7/217.7 kB 4.6 MB/s eta 0:00:00
+Downloading anyio-4.9.0-py3-none-any.whl (100 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.9/100.9 kB 3.3 MB/s eta 0:00:00
+Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 1.8 MB/s eta 0:00:00
+Downloading tenacity-8.5.0-py3-none-any.whl (28 kB)
+Downloading websockets-15.0.1-cp311-cp311-macosx_10_9_x86_64.whl (173 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.1/173.1 kB 4.8 MB/s eta 0:00:00
+Installing collected packages: websockets, tenacity, anyio, httpx, google-genai
+  Attempting uninstall: websockets
+    Found existing installation: websockets 12.0
+    Uninstalling websockets-12.0:
+      Successfully uninstalled websockets-12.0
+  Attempting uninstall: tenacity
+    Found existing installation: tenacity 8.2.2
+    Uninstalling tenacity-8.2.2:
+      Successfully uninstalled tenacity-8.2.2
+  Attempting uninstall: anyio
+    Found existing installation: anyio 4.2.0
+    Uninstalling anyio-4.2.0:
+      Successfully uninstalled anyio-4.2.0
+  Attempting uninstall: httpx
+    Found existing installation: httpx 0.27.2
+    Uninstalling httpx-0.27.2:
+      Successfully uninstalled httpx-0.27.2
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+streamlit 1.30.0 requires packaging<24,>=16.8, but you have packaging 24.2 which is incompatible.
+streamlit 1.30.0 requires protobuf<5,>=3.20, but you have protobuf 6.31.1 which is incompatible.
+gradio-client 1.4.0 requires websockets<13.0,>=10.0, but you have websockets 15.0.1 which is incompatible.
+Successfully installed anyio-4.9.0 google-genai-1.26.0 httpx-0.28.1 tenacity-8.5.0 websockets-15.0.1
+(base) anupkaul@147dda4c0851 gemini % 
+
+--> Fixed
+
+python api-usage.py
+Traceback (most recent call last):
+  File "/Users/anupkaul/akaul_git/basic-agents/gemini/api-usage.py", line 4, in <module>
+    client = genai.Client()
+             ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/genai/client.py", line 219, in __init__
+    self._api_client = self._get_api_client(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/genai/client.py", line 265, in _get_api_client
+    return BaseApiClient(
+           ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/genai/_api_client.py", line 554, in __init__
+    raise ValueError(
+ValueError: Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments.
+
+
+--> Fixed
+
+python use-gemini.py
+Enter API key for Google Gemini: 
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini_2.0-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+Traceback (most recent call last):
+  File "/Users/anupkaul/akaul_git/basic-agents/use_llms/use-gemini.py", line 14, in <module>
+    response = model.invoke( [ {"role": "user", "content" : query} ] )
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 1334, in invoke
+    return super().invoke(input, config, stop=stop, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 378, in invoke
+    self.generate_prompt(
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 963, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 782, in generate
+    self._generate_with_cache(
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1028, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 1441, in _generate
+    response: GenerateContentResponse = _chat_with_retry(
+                                        ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 231, in _chat_with_retry
+    return _chat_with_retry(**params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/lib/python3.11/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 222, in _chat_with_retry
+    raise e
+  File "/opt/anaconda3/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 206, in _chat_with_retry
+    return generation_method(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 868, in generate_content
+    response = rpc(
+               ^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini_2.0-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+

@@ -1,0 +1,2 @@
+https://cookbook.openai.com/examples/deep_research_api/introduction_to_deep_research_api
+https://github.com/openai/openai-cookbook/blob/main/examples/deep_research_api/introduction_to_deep_research_api.ipynb

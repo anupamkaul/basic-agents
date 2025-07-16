@@ -1,0 +1,6 @@
+https://aistudio.google.com/app/apikey
+https://ai.google.dev/gemini-api/docs/quickstart
+https://ai.google.dev/gemini-api/docs
+
+
+

@@ -1,0 +1,10 @@
+Langchain basics:
+https://www.youtube.com/watch?v=aywZrzNaKjs&t=269s
+
+https://python.langchain.com/docs/tutorials/agents/
+https://python.langchain.com/docs/tutorials/
+https://python.langchain.com/docs/tutorials/chatbot/
+https://python.langchain.com/docs/tutorials/llm_chain/
+https://python.langchain.com/docs/how_to/
+
+

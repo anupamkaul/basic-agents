@@ -1,2 +1,2 @@
-# basic-agents
-basic agents
+samples of using langchain constructs for agentic behavior
+
