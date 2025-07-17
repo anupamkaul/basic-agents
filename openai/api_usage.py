@@ -8,7 +8,7 @@ try:
         OPENAI_API_KEY = OPENAI_API_KEY.rstrip('\n')
 
     print("File content read successfully:")
-    print("My openAI Key: ", OPENAI_API_KEY)
+    #print("My openAI Key: ", OPENAI_API_KEY)
 except FileNotFoundError:
     print(f"Error: The file '{file_path}' was not found.")
 except Exception as e:

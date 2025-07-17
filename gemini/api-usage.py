@@ -7,7 +7,7 @@ try:
         GEMINI_API_KEY = GEMINI_API_KEY.rstrip('\n')
 
     print("File content read successfully:")
-    print("My GEMINI Key: ", GEMINI_API_KEY)
+    #print("My GEMINI Key: ", GEMINI_API_KEY)
 except FileNotFoundError:
     print(f"Error: The file '{file_path}' was not found.")
 except Exception as e:
@@ -24,12 +24,25 @@ print(client)
 # text generation
 # https://ai.google.dev/gemini-api/docs/text-generation
 
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents="What is the latest happening on lung cancer research?"
-)
+while True:
 
-print(response.text)
+    try:
+        user_contents = input("\nquery: ")
+
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            #contents="What is the latest happening on lung cancer research?"
+            contents=user_contents
+        )
+
+        print(response.text)
+
+    except KeyboardInterrupt:
+        print("\nInterrupt detected, exiting loop.")
+        break
+
+
+
 
 
 
