@@ -7,4 +7,6 @@ https://python.langchain.com/docs/tutorials/chatbot/
 https://python.langchain.com/docs/tutorials/llm_chain/
 https://python.langchain.com/docs/how_to/
 
-
+Generate keys from:
+https://platform.openai.com/settings/organization/api-keys
+https://aistudio.google.com/app/api-keys

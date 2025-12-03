@@ -1,5 +1,7 @@
+#import google.generativeai as genai
 from google import genai
-key_path = '/Users/anupkaul/.key/GEMINI-KEY.txt' 
+#key_path = '/Users/anupkaul/.key/GEMINI-KEY.txt' 
+key_path = '/home/anupam/.key/GEMINI-KEY.txt' 
 
 try:
     with open(key_path, 'r', encoding='utf-8') as file:

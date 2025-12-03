@@ -1,6 +1,7 @@
 from openai import OpenAI
 #key_path = './OPENAI-KEY.txt' 
-key_path = '/Users/anupkaul/.key//OPENAI-KEY.txt' 
+#key_path = '/Users/anupkaul/.key//OPENAI-KEY.txt' 
+key_path = '/home/anupam/.key//OPENAI-KEY.txt' 
 
 try:
     with open(key_path, 'r', encoding='utf-8') as file:
