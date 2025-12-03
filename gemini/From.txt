@@ -2,5 +2,8 @@ https://aistudio.google.com/app/apikey
 https://ai.google.dev/gemini-api/docs/quickstart
 https://ai.google.dev/gemini-api/docs
 
+look up tokens/minute, input tokens per day and other usage stats at:
+https://aistudio.google.com/app/usage?timeRange=last-28-days
+
 
 
