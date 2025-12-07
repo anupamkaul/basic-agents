@@ -1,0 +1,21 @@
+./run
+warning: `VIRTUAL_ENV=/home/anupam/anu-env` does not match the project environment path `/home/anupam/akaul_git/udem-agents/agents/.venv` and will be ignored; use `--active` to target the active environment instead
+My openai key exists and begins sk-proj-
+<openai.OpenAI object at 0x7ed0c1134650>
+Traceback (most recent call last):
+  File "/home/anupam/akaul_git/udem-agents/agents/foundations/start.py", line 25, in <module>
+    response = openai.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anupam/akaul_git/udem-agents/agents/.venv/lib/python3.12/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anupam/akaul_git/udem-agents/agents/.venv/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/anupam/akaul_git/udem-agents/agents/.venv/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anupam/akaul_git/udem-agents/agents/.venv/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
