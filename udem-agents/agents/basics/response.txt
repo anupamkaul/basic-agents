@@ -1,0 +1,27 @@
+uv run start.py 
+warning: `VIRTUAL_ENV=/home/anupam/anu-env` does not match the project environment path `/home/anupam/akaul_git/basic-agents/udem-agents/agents/.venv` and will be ignored; use `--active` to target the active environment instead
+My openai key exists and begins sk-proj-
+<openai.OpenAI object at 0x797eefe47140>
+2 + 3 equals 5.
+If two trains start at the same time from cities 300 miles apart and travel toward each other—one at 50 mph and the other at 70 mph—how many minutes after departure will they meet?
+The two trains are traveling toward each other from cities that are 300 miles apart.
+
+- Speed of first train = 50 mph
+- Speed of second train = 70 mph
+
+Since they are moving toward each other, their relative speed is:
+\[ 50 + 70 = 120 \text{ mph} \]
+
+Time to meet:
+\[
+\text{Time} = \frac{\text{Distance}}{\text{Relative speed}} = \frac{300}{120} = 2.5 \text{ hours}
+\]
+
+Convert hours to minutes:
+\[
+2.5 \times 60 = 150 \text{ minutes}
+\]
+
+**Answer:**
+They will meet **150 minutes** after departure.
+
