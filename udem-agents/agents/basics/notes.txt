@@ -1,3 +1,5 @@
 https://apidog.com/blog/free-open-source-llm-apis/
 
 https://modelcontextprotocol.io/specification/2025-11-25
+
+leaderboard (compare llms) : https://www.vellum.ai/llm-leaderboard?utm_source=google&utm_medium=organic
