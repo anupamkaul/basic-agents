@@ -1,0 +1,40 @@
+Use Conditional Includes in .gitconfig 
+
+This method automatically switches your user.email and user.name based on the directory you are working in. 
+
+Set Global Configuration: First, set your personal information as the default global settings in your main ~/.gitconfig file:
+
+bash
+
+git config --global user.name "Your Personal Name"
+git config --global user.email "your_personal_email@example.com"
+
+Create a Work-Specific Config File: Create a separate configuration file for your work projects, for example, ~/.gitconfig-work:
+
+bash
+
+# ~/.gitconfig-work
+[user]
+    name = Your Office Name
+    email = your_office_email@office.com
+
+Use includeIf: Back in your global ~/.gitconfig file, add an includeIf statement that applies the work configuration only when you are in your work directory (e.g., ~/Projects/Work/):
+
+bash
+
+# ~/.gitconfig
+[user]
+  name = Your Personal Name
+  email = your_personal_email@example.com
+
+[includeIf "gitdir:~/Projects/Work/"]
+  path=~/.gitconfig-work`
+
+## Note: to get this to work, make sure there is NO SPACE between gitdir:<path> and path=<path>
+## (relative paths worked for me but previously I had a space after path = <path> and I got the non-overriden email again
+## Instead of relying on the actual git commit to work, use: git config user.email, and it should show you the right email ID
+
+## (I used ~/gitconfig, added the includeIF at the END of the file, and I used ~/gitconfig.PERSONAL as the alternate override)
+## Thus my default is the office and the override is the personal email ID (opposite of this text, and it works)
+
+
