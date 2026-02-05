@@ -36,7 +36,7 @@ print(answer)
 
 
 # 2 
-my_messages = [{"role": "user", "content": "From the previous response, present a pain point in this industry - something challenging that might be ripe for an agentic solution"}]
+my_messages = [{"role": "user", "content": "From the previous response, present a pain point in this industry - something challenging that might be ripe for an agentic solution. Remember the pain point as I will ask about it later"}]
 
 response = openai.chat.completions.create(
     model="gpt-4.1-mini",
