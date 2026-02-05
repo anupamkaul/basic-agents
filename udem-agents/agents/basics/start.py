@@ -26,7 +26,6 @@ response = openai.chat.completions.create(
             messages=my_messages
         )
 print(response.choices[0].message.content)
-exit()
 
 # now let's change the model to a cheaper one, ask it to ask a difficult question
 # and then have it answer its question itself:
