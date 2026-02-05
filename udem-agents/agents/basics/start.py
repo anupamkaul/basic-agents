@@ -20,12 +20,13 @@ print(openai) # just a pointer, not that it matters much
 
 # create a list of messages in familiar openAI format
 
-my_messages = [{"role": "user", "content": "what is 2+3"}]
+my_messages = [{"role": "user", "content": "what is 2+8"}]
 response = openai.chat.completions.create(
             model="gpt-4.1-nano",
             messages=my_messages
         )
 print(response.choices[0].message.content)
+exit()
 
 # now let's change the model to a cheaper one, ask it to ask a difficult question
 # and then have it answer its question itself:
