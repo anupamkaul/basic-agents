@@ -1,0 +1,23 @@
+The zip() function in Python combines the elements of the competitors and answers iterables (like lists or tuples) 
+pairwise into a single sequence of tuples [1]. 
+
+In the provided code snippet:
+
+zip(competitors, answers) creates an iterable of tuples, where the first tuple contains (competitors[0], answers[0]), 
+the second contains (competitors[1], answers[1]), and so on.
+
+The for loop then unpacks each of these tuples into the variables competitor and answer for each iteration.
+
+The print() statement executes once for each pair, printing the corresponding competitor and their answer together [1].
+ 
+For example, if:
+
+competitors = ["C1", "C2"]
+answers = ["A1", "A2"]
+
+The zip() call would produce the sequence [("C1", "A1"), ("C2", "A2")]. The loop would iterate twice, with the variables taking on these values: 
+
+Iteration 1: competitor is "C1", answer is "A1"
+Iteration 2: competitor is "C2", answer is "A2" 
+
+The process stops when the shortest of the input iterables is exhausted [1]. 
