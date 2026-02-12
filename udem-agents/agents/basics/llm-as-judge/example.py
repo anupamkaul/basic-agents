@@ -83,7 +83,7 @@ messages = [{"role": "user", "content": question}]
 # Replace the model with gpt-4.1-mini if prefer not to wait 1-2 mins
 
 model_name = "gpt-5-nano"
-print("Asking ", model_name, "...\n")
+print("\nAsking ", model_name, "...\n")
 
 response = openai.chat.completions.create(model=model_name, messages=messages)
 answer = response.choices[0].message.content
